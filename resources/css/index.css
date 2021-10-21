@@ -1,0 +1,378 @@
+body{
+    margin: 0;
+}
+
+/* =================Nav bar ================= */
+
+nav {
+    color: white;
+    width: 100%;
+}
+
+nav img {
+    height: 40px;
+    width: 180px;
+    margin-top: 4px;
+}
+
+nav input {
+    width: 640px;
+    height: 35px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    background-color: #DCDCDC;
+}
+
+nav .brand{
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+    margin-top: 16px;
+    margin-left: 680px;
+}
+
+nav .unSplash{
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+    margin-top: 16px;
+    margin-left: 740px;
+}
+
+nav .login{
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+    margin-top: 16px;
+    margin-left: 920px;
+}
+
+nav .submitAPhoto{
+    height: 35px;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 8px;
+    border: 1px solid black;
+    margin-left: 1000px;
+}
+
+nav .submitAPhoto:active{
+    border: 2px solid black;
+}
+
+
+nav .lines_3{
+    height: 35px;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid black;
+    margin-top: 8px;
+    margin-left: 1140px;
+}
+
+nav .lines_3:active{
+    border: 2px solid black;
+}
+
+/* -------------------------------Nav end--------------------- */
+
+/* -----------------------------Button List------------------------- */
+
+.buttonsList{
+    display: flex;
+    margin-top: 5px;
+}
+
+
+.buttonsList .left {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.buttonsList .left button {
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    height: 40px;
+    background-color: white;
+    
+}
+
+.buttonsList .right {
+    display: flex;
+}
+
+.buttonsList .right button {
+    border: transparent;
+    height: 40px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+/* -----------------------------Button List ends------------------------- */
+
+
+/* hero strats */
+.m_display_image{
+    background: url("../images/BG.jpg");
+    height: 550px;
+    position: relative;
+}
+
+.splash_content{
+    position: absolute;
+    color: white;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 20%;
+}
+
+.splash_content input{
+    width: 100%;
+    height: 40px;
+}
+
+.splash_content ul {
+    padding-left: 0;
+}
+
+.splash_content li{
+    float: left;
+    list-style-type: none;
+
+}
+
+.splash_content a {
+    color: white;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+/* hero end */
+
+/* unsplash award */
+
+.black{
+    margin: 25px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* unsplash award ends  */
+
+
+/* lower cards images */
+
+.flex{
+    display: flex;
+    padding: 25px;
+}
+
+.a1_image{
+    width: 416px;
+    height: 400px;
+    margin: 10px;
+}
+
+.b1_image{
+    width: 416px;
+    height: 600px;
+    margin: 10px;
+}
+
+.b2_image{
+    width: 416px;
+    height: 200px;
+    margin: 10px;
+}
+
+
+
+/* media query for 992px  */
+
+@media screen and (max-width: 992px) {
+
+
+    /* body{
+        width: 890px;
+    } */
+
+    nav{
+        width: 890px;
+    }
+
+    nav img {
+        height: 40px;
+        width: 45px;
+        margin-top: 4px;
+    }
+
+    nav input {
+        width: 360px;
+        height: 35px;
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        border-radius: 25px;
+        background-color: #DCDCDC;
+    }
+
+    nav .brand{
+        position: absolute;
+        background-color: transparent;
+        border: transparent;
+        margin-top: 16px;
+        margin-left: 400px;
+    }
+
+    nav .unSplash{
+        position: absolute;
+        background-color: transparent;
+        border: transparent;
+        margin-top: 16px;
+        margin-left: 450px;
+    }
+    
+    nav .login{
+        position: absolute;
+        background-color: transparent;
+        border: transparent;
+        margin-top: 16px;
+        margin-left: 610px;
+    }
+    
+    nav .submitAPhoto{
+        height: 35px;
+        position: absolute;
+        background-color: transparent;
+        margin-top: 8px;
+        border: 1px solid black;
+        margin-left: 680px;
+    }
+    
+    nav .lines_3{
+        height: 35px;
+        position: absolute;
+        background-color: transparent;
+        border: 1px solid black;
+        margin-top: 8px;
+        margin-left: 790px;
+    }
+
+    /* ---------------------------------------- */
+
+    /* .buttonsList{
+        display: flex;
+        margin-top: 5px;
+        overflow: hidden;
+        width: 890px;
+    }
+    
+    .buttonsList .left {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .buttonsList .left button {
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        height: 40px;
+        background-color: white;
+        
+    }
+    
+    .buttonsList .right {
+        display: flex;
+    }
+    
+    .buttonsList .right button {
+        border: transparent;
+        height: 40px;
+        background-color: white;
+        margin-left: 10px;
+    } */
+
+    /* ---------------------------------------------------- */
+
+    /* .m_display_image{
+        background: url("../images/BG.jpg");
+        height: 550px;
+        width: 890px;
+        position: relative;
+    }
+    
+    .splash_content{
+        position: absolute;
+        color: white;
+        left: 20%;
+        right: 20%;
+        top: 20%;
+        bottom: 20%;
+    }
+    
+    .splash_content input{
+        width: 100%;
+        height: 40px;
+    }
+    
+    .splash_content ul {
+        padding-left: 0;
+    }
+    
+    .splash_content li{
+        float: left;
+        list-style-type: none;
+    
+    }
+    
+    .splash_content a {
+        color: white;
+        margin-left: 2px;
+        text-decoration: none;
+    } */
+
+    /* -------------------------------------------------------------- */
+
+    /* .bl{
+        
+        width: 890px;
+    } */
+
+    /* ------------------------------------------------------------------ */
+
+    /* .flex{
+        display: flex;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 890px;
+    }
+    .a1_image{
+        width: 255px;
+        height: 400px;
+        margin: 10px;
+    }
+    
+    .b1_image{
+        width: 255px;
+        height: 600px;
+        margin: 10px;
+    }
+    
+    .b2_image{
+        width: 255px;
+        height: 200px;
+        margin: 10px;
+    } */
+
+  }
+

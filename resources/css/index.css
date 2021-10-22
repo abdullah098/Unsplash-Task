@@ -46,9 +46,46 @@ nav input {
     background-color: #DCDCDC;
 }
 
+.show {display: block;}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
 nav .submit:active{
     border: 2px solid black;
 }
+
+.menu-box {
+    display: flex;
+    padding: 30px;
+}
+
+.menu-box li{
+    list-style-type: none;
+}
+
+.menu-box  .col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 
 
 /* -------------------------------Nav end--------------------- */
@@ -151,7 +188,54 @@ nav .submit:active{
 }
 
 
+/* ------------------------------------------------- */
 
+/* login model  */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+ .fb-btn {
+      width: 50%;
+      height: 35px;
+      background: #5890FF;
+      color: #fff;
+      
+  }
+
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 
@@ -206,4 +290,9 @@ nav .submit:active{
     
 
   }
+
+
+
+
+  
 

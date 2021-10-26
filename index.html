@@ -14,10 +14,10 @@
     <!-- Header Starts -->
     <header>
         <!-- ---------------------------------- Nav bar Starts ----------------------------  -->
-        <nav style="display: flex; border: 1px solid red;">
+        <nav style="display: flex;">
 
-            <img style="border: 1px solid black;" src="./resources/images/logo.png" alt="Logo image">
-            <input type="text" placeholder="Search">
+            <img src="./resources/images/logo.png" alt="Logo image">
+            <input class="search-input" type="text" placeholder="Search">
 
             <button class="button">brand</button>
             <button class="button">
@@ -39,18 +39,33 @@
                 <div class="modal-content">
                     <span class="close">&times;</span>
 
-                    <div style="border: 1px solid red; text-align: center;" >
-                        <img style="border: 1px solid black;" src="./resources/images/logo_login.png" alt="">
-                        <p style="border: 1px solid black;">to submit a photo, Login</p>
-                        <button class="fb-btn">Facebook</button>
-                        <input type="email" name="" id="" placeholder="Email">
+                    <div style="text-align: center;">
+
+                        <div class="login-width">
+                            <img src="./resources/images/logo_login.png" alt="">
+                            <p>to submit a photo, Login</p>
+                            <button class="fb-btn fb-button">
+                                <i class="bi bi-facebook iconFb"></i>
+                                Facebook
+                            </button>
+                            <br>
+                            <p>OR</p>
+                            <form class="login-model-form" action="index.html" method="post" id="login-popup">
+                                <label for="" style="text-align: start;">Email</label>
+                                <input type="email" name="" value="" required>
+                                <br>
+                                <br>
+                                <label for="">Password <a href="#">Forgot your password?</a> </label>
+
+                                <input type="password" name="" value="" required>
+                                <br>
+                                <br>
+                                <button type="submit" name="button" class="login-submit-btn">Login</button>
+                                <p>Don't have an account? <a href="./signUp.html">Join</a> </p>
+                            </form>
+                        </div>
                     </div>
-                    <p>Some text in the Modal..</p>
-
-                    
-
                 </div>
-
             </div>
 
 
@@ -111,45 +126,12 @@
                         <button class="button">Security</button>
                     </div>
                 </div>
-                <!-- <button class="dropbtn button_with_border submit">
-                    <span id="abc">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="currentColor"
-                            class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                        </svg>
-                    </span>
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div> -->
             </div>
-
-            <!-- <button class="button_with_border submit dropdown" id="#menu" >
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </span>
-
-                <div class="dropdown-content" id="#content">
-                    a
-                </div>
-
-
-
-            </button> -->
-
-
         </nav>
         <!-- ---------------------------------- Nav bar Ends ----------------------------  -->
 
         <!-- buttons list start  -->
-        <div class="flex" style="border:1px solid black;">
+        <div class="flex">
             <div>
                 <button class="buttonList_left">Editorial</button>
             </div>
@@ -184,7 +166,71 @@
             <p>The internet’s source of freely-usable images.</p>
             <p>Powered by creators everywhere.</p>
 
-            <input type="search" name="" id="" placeholder="Search">
+            <input class="unsplash-input" type="search" name="" placeholder="Search" onclick="search_Dropdeown()">
+
+
+            <!-- search dropdown  -->
+            <div id="search" class="search-content">
+                <div class="search-types">
+                    <p>Recent Searches <span>Clear</span> </p>
+                    <button type="button" name="button" class="search-btn">potrait</button>
+                    <button type="button" name="button" class="search-btn">arab people</button>
+                    <button type="button" name="button" class="search-btn">arab person</button>
+                    <button type="button" name="button" class="search-btn">person</button>
+                    <button type="button" name="button" class="search-btn">avatar</button>
+                </div>
+                <div class="search-types">
+                    <p>Trending Searches</p>
+                    <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i>
+                        pumpkin</button>
+                    <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i>
+                        psni</button>
+                    <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i>
+                        snow</button>
+                    <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i>
+                        spin</button>
+                    <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i>
+                        instagram</button>
+                </div>
+                <div class="search-types">
+                    <p>Trending Topics</p>
+                    <div class="flex">
+                        <div class="flex search-topics">
+                            <div class="img-btn">
+                            </div>
+                            <a href="#">Nature</a>
+                        </div>
+                        <div class="flex search-topics">
+                            <div class="img-btn">
+                            </div>
+                            <a href="#">People</a>
+                        </div>
+                        <div class="flex search-topics">
+                            <div class="img-btn">
+                            </div>
+                            <a href="#">current events</a>
+                        </div>
+                        <div class="flex search-topics">
+                            <div class="img-btn">
+                            </div>
+                            <a href="#">fashion</a>
+                        </div>
+                        <div class="flex search-topics">
+                            <div class="img-btn">
+                            </div>
+                            <a href="#">experimental</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-types">
+                    <p>Trending Collections</p>
+                    <button type="button" name="button" class="search-btn">Olympics</button>
+                    <button type="button" name="button" class="search-btn">Tokyo</button>
+                    <button type="button" name="button" class="search-btn">wings</button>
+                    <button type="button" name="button" class="search-btn">camping</button>
+                    <button type="button" name="button" class="search-btn">shadyside</button>
+                </div>
+            </div>
 
             <ul>
                 <li><strong>Trading: </strong></li>
@@ -201,7 +247,7 @@
     <!-- hero end  -->
 
     <!-- unsplash awardsstart  -->
-    <div class="bl" style="border:1px solid red">
+    <div class="bl">
         <div class="black">
             <h1>Unsplash award 2021</h1>
             <p>Now accepting submission to the 5th edition of the Unsplash Awards. <a href="#">Learn more</a></p>
@@ -213,17 +259,17 @@
     <!-- lower images card start  -->
 
 
-    <div class="row" style="border: 1px solid green;">
-        <div class="column" style="border: 1px solid red;">
+    <div class="row">
+        <div class="column">
             <img src="./resources/images/1.jpg" style="width:100%">
             <img src="./resources/images/2.jpg" style="width:100%">
         </div>
-        <div class="column" style="border: 1px solid red;">
+        <div class="column">
             <img src="./resources/images/3.jpg" style="width:100%">
             <img src="./resources/images/4.jpg" style="width:100%">
             <img src="./resources/images/1.jpg" style="width:100%">
         </div>
-        <div class="column" style="border: 1px solid red;">
+        <div class="column">
             <img src="./resources/images/1.jpg" style="width:100%">
             <img src="./resources/images/3.jpg" style="width:100%">
             <img src="./resources/images/4.jpg" style="width:100%">
